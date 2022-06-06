@@ -57,6 +57,7 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btbAnh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLSinhVienDataSet)).BeginInit();
@@ -242,11 +243,12 @@
             this.Column4,
             this.Column5,
             this.Column6,
-            this.Column7});
+            this.Column7,
+            this.TrangThai});
             this.dgv_thongtin.DataSource = this.sinhVienBindingSource;
-            this.dgv_thongtin.Location = new System.Drawing.Point(2, 275);
+            this.dgv_thongtin.Location = new System.Drawing.Point(12, 275);
             this.dgv_thongtin.Name = "dgv_thongtin";
-            this.dgv_thongtin.Size = new System.Drawing.Size(938, 210);
+            this.dgv_thongtin.Size = new System.Drawing.Size(1063, 210);
             this.dgv_thongtin.TabIndex = 6;
             // 
             // Column1
@@ -292,14 +294,20 @@
             this.Column7.DataPropertyName = "DiaChi";
             this.Column7.HeaderText = "Địa chỉ";
             this.Column7.Name = "Column7";
-            this.Column7.Width = 200;
+            this.Column7.Width = 120;
+            // 
+            // TrangThai
+            // 
+            this.TrangThai.DataPropertyName = "TrangThai";
+            this.TrangThai.HeaderText = "TrangThai";
+            this.TrangThai.Name = "TrangThai";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(943, 514);
+            this.ClientSize = new System.Drawing.Size(1103, 514);
             this.Controls.Add(this.dgv_thongtin);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.btbAnh);
@@ -352,6 +360,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewComboBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
     }
 }
 

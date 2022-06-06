@@ -41,6 +41,20 @@ namespace WindowsFormsApp6
             cbo_lop.DisplayMember = "TenLop";
             cbo_lop.ValueMember = "MaLop";
 
+            //cbo_lop.DisplayMember = "TenLop";
+            //cbo_lop.ValueMember = "MaLop";
+
+
+            dataAdapter = new SqlDataAdapter("SELECT * FROM SINHVIEN  WHERE TRANGTHAI = 1", connet);
+            dataAdapter.Fill(dsSinhvien, "tableLop");
+
+
+            dgv_thongtin.AutoGenerateColumns = false;
+           // dgv_thongtin.DataSource = dsSinhvien.Tables["dgvLop"].Copy();
+            
+
+
+            
 
             
 
